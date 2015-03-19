@@ -23,7 +23,7 @@ router.post('/send', function(req, res, next) {
 	var msg = req.body.msg;
 	var phones = req.body.phones;
 	//temporary numbers
-	phones = = [972587184392, 972535399999, 972547355879];
+	phones = [972587184392, 972535399999, 972547355879];
 	for(var i=0; i<phones.length; i++){
 		sendWasup(phones[i], msg);
 	}
